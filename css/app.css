@@ -1,0 +1,34 @@
+@font-face {
+    font-family: OpenSans;
+    src: url(fonts/OpenSans.ttf);
+}
+
+a {
+	color: white;
+}
+
+a:hover {
+	background-color: #FCB800;
+}
+
+ul {
+	list-style: none;
+}
+
+.encabezado-logotipo {
+	position: absolute;
+	z-index: 1;
+	top:30px;
+	left: 30px;
+}
+
+.encabezado-redes_sociales, .encabezado-contenedorm {
+	position: absolute;
+	right: 0;
+	z-index: 1;
+	background-color: #25A7C5;
+}
+
+.encabezado-contenedorm-menu{
+	right: -200px;
+}
