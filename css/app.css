@@ -1,6 +1,10 @@
 @font-face {
     font-family: OpenSans;
-    src: url(fonts/OpenSans.ttf);
+    src: url(fonts/OpenSans-Regular.ttf);
+}
+
+body {
+	font-family: OpenSans;
 }
 
 a {
@@ -30,5 +34,11 @@ ul {
 }
 
 .encabezado-contenedorm-menu{
-	right: -200px;
+	display: none;
+}
+
+/* Clases de foundation */
+
+.orbit-slide {
+	width: 200vh;
 }
