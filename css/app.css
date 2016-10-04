@@ -1,6 +1,12 @@
 @import 'https://fonts.googleapis.com/css?family=Exo+2:400,700,700i';
 @import 'https://fonts.googleapis.com/css?family=Montserrat';
 
+/*seccion de etiquetas */
+
+html {
+	overflow-x:hidden; 
+}
+
 body {
 	font-family: 'Montserrat', sans-serif;
 }
@@ -12,6 +18,11 @@ h1,h2,h3,h4,h5,h6, a, a:hover {
 h1,h2,h3,h4,h5,h6 {
 	color: #0F5EA8;
 	font-size: 2em;
+}
+
+h4 {
+	color: white;
+	font-size: 1.2em;
 }
 
 a {
@@ -58,9 +69,11 @@ ul {
 	display: none;
 }
 
+/*seccion de acerca y servicios*/
+
 .acerca{
 	text-align: center;
-	margin: 2em 0;
+	margin: 0 0 2em 0;
 }
 
 .acerca-icono {
@@ -77,10 +90,25 @@ ul {
 
 .servicios {
 	background-color: #2281DB;
+	text-align: center;
+	margin: 0 0 1em 0;
 }
 
 .servicios-titulo{
 	color:white;
+}
+
+.servicio-iconos{
+	width: 150px;
+}
+
+.servicio-iconosb{
+	width: 80px;
+}
+
+.menu>li>a {
+	font-size: .7em;
+	padding: .5em;
 }
 
 /* Clases de foundation */
@@ -104,8 +132,12 @@ ul {
 	.boton-menu{
 		color:white;
 	}
-
+	
+	/*seccion de acerca y servicios*/
 	.acerca-icono {
-	width: 50%;
-}
+		width: 50%;
+	}
+	.servicio-iconosb{
+		width: 95px;
+	}
 }
