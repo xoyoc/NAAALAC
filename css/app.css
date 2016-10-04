@@ -24,7 +24,7 @@ ul {
 .encabezado-logotipo {
 	position: absolute;
 	z-index: 1;
-	top:30px;
+	top: 30px;
 	left: 30px;
 	width: 25%;
 }
@@ -36,11 +36,17 @@ ul {
 	background-color: #25A7C5;
 }
 
+.encabezado-redes_sociales{
+	font-size: 1.5em;
+}
+
 .boton-menu {
 	position: absolute;
-	top: 10px;
+	top: 40px;
 	right: 10px;
 	z-index: 1;
+	font-size: 2em;
+	color: #25A7C5;
 }
 
 
@@ -57,10 +63,16 @@ ul {
 	.orbit-slide {
 		width: 225vh;
 	}
+	.orbit-previous,.orbit-next{
+		display: none;
+	}
 	.encabezado-redes_sociales{
 		bottom: 0;
 	}
 	.encabezado-logotipo{
 		width: 70%;
+	}
+	.boton-menu{
+		color:white;
 	}
 }
