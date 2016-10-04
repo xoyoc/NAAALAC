@@ -9,6 +9,11 @@ h1,h2,h3,h4,h5,h6, a, a:hover {
 	font-family: 'Exo 2', sans-serif;
 }
 
+h1,h2,h3,h4,h5,h6 {
+	color: #0F5EA8;
+	font-size: 2em;
+}
+
 a {
 	color: white;
 }
@@ -49,9 +54,33 @@ ul {
 	color: #25A7C5;
 }
 
-
 .encabezado-contenedorm-menu{
 	display: none;
+}
+
+.acerca{
+	text-align: center;
+	margin: 2em 0;
+}
+
+.acerca-icono {
+	width: 30%;
+}
+
+.boton-amarillo{
+	background: #FCB700;
+	color:white;
+	text-transform: uppercase;
+	border:none;
+	padding: .5em;
+}
+
+.servicios {
+	background-color: #2281DB;
+}
+
+.servicios-titulo{
+	color:white;
 }
 
 /* Clases de foundation */
@@ -75,4 +104,8 @@ ul {
 	.boton-menu{
 		color:white;
 	}
+
+	.acerca-icono {
+	width: 50%;
+}
 }
