@@ -20,6 +20,11 @@ h1,h2,h3,h4,h5,h6 {
 	font-size: 2em;
 }
 
+h3 {
+	font-size: .6em;
+	text-transform: uppercase;
+}
+
 h4 {
 	color: white;
 	font-size: 1.2em;
@@ -53,7 +58,7 @@ ul {
 }
 
 .encabezado-redes_sociales{
-	font-size: 1.5em;
+	font-size: 2em;
 }
 
 .boton-menu {
@@ -92,6 +97,9 @@ ul {
 	background-color: #2281DB;
 	text-align: center;
 	margin: 0 0 1em 0;
+	position: absolute;
+	right: 0;
+	top:530px;
 }
 
 .servicios-titulo{
@@ -109,6 +117,54 @@ ul {
 .menu>li>a {
 	font-size: .7em;
 	padding: .5em;
+}
+
+/*seccion de asociados*/
+.asociados{
+	background-color: #F9F9F9;
+}
+
+.asociados-titulo{
+	text-align: center;
+}
+
+.asociados-cuadro-blanco{
+	background-color: white;
+}
+
+.asociados-cuadro-color-Verde{
+	background-color: #A9C350;
+}
+
+.asociados-cuadro-color-Rojo{
+	background-color: #C5364C;
+}
+
+.asociados-cuadro-color-AzulFuerte{
+	background-color: #3861A5;
+}
+
+.asociados-cuadro-color-AzulCielo{
+	background-color: #60A6C3;
+}
+
+.asociados-cuadro-color-AzulMedio{
+	background-color: #4f80d7;
+}
+
+.asociados-cuadro-color-Verde>h3, .asociados-cuadro-color-Rojo>h3, .asociados-cuadro-color-AzulFuerte>h3, .asociados-cuadro-color-AzulCielo>h3, .asociados-cuadro-color-AzulMedio>h3{
+	color: white;
+}
+
+.aa:before {
+	content: "A.A. ";
+}
+
+.aa {
+	font-size: 1em;
+}
+.asociados-cuadro-blanco>h3, .asociados-cuadro-blanco>.aa {
+	color:black;
 }
 
 /* Clases de foundation */
@@ -139,5 +195,10 @@ ul {
 	}
 	.servicio-iconosb{
 		width: 95px;
+	}
+	.servicios {
+		position: initial;
+		right: initial;
+		top: initial;
 	}
 }
