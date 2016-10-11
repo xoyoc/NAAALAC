@@ -196,30 +196,67 @@ ul {
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
     background-origin: content-box;
-	height: 450px;
+}
+
+.enlaces-contenedor{
+	position: relative;
 }
 
 .enlaces-caja{
-	width: 50%;
-	height: 40%;
+	position: absolute;
+	right: -10%;
+	top:50%;
+	width: 40%;
 	background-color: #1B2C4D;
 }
 
-.enlaces-caja>a{
+.enlaces-caja>div{
+	display: flex;
+}
+
+.enlaces-caja>div>a{
 	display: block;
+	width: 20%;
 }
 
-.enlaces-caja>a>p{
+.enlaces-caja>div>a>p{
 	display: inline-block;
+	margin-bottom: 0;
+	font-size: .8em;
 }
 
-.enlaces-iconosb{
+.enlaces-iconosb,.requisitos-iconos{
 	width: 50px;
 }
 
-.requisitos-eslogan{
-	margin: 3em auto;
+.requisitos-caja{
+	background-color: #25A7C5;
+	height: 450px;
 }
+
+.requisitos-titulo{
+	margin: 1em 0;
+}
+
+.requisitos-eslogan{
+	margin: 2em auto;
+}
+
+.requisitos-items{
+	margin-left: 1em;
+	width: 20%;
+}
+
+.requisitos-items>p{
+	color: white;
+}
+
+.filas-requisitos{
+	display: flex;
+	justify-content: space-around;
+	padding: 0 3.5em;
+}
+
 /* Clases diseño movil */
 
 @media only screen and (max-width: 500px){
