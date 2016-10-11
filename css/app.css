@@ -120,6 +120,10 @@ ul {
 }
 
 /*seccion de asociados*/
+.orbit, .orbit-slide{
+	width: 100%;
+}
+
 .asociados{
 	background-color: #F9F9F9;
 }
@@ -130,44 +134,93 @@ ul {
 
 .asociados-cuadro-blanco{
 	background-color: white;
+	padding: 1em 1.2em;
 }
 
 .asociados-cuadro-color-Verde{
 	background-color: #A9C350;
+	padding: 1em 1.2em;
 }
 
 .asociados-cuadro-color-Rojo{
 	background-color: #C5364C;
+	padding: 1em 1.2em;
 }
 
 .asociados-cuadro-color-AzulFuerte{
 	background-color: #3861A5;
+	padding: 1em 1.2em;
 }
 
 .asociados-cuadro-color-AzulCielo{
 	background-color: #60A6C3;
+	padding: 1em 1.2em;
 }
 
 .asociados-cuadro-color-AzulMedio{
 	background-color: #4f80d7;
+	padding: 1em 1.2em;
 }
 
 .asociados-cuadro-color-Verde>h3, .asociados-cuadro-color-Rojo>h3, .asociados-cuadro-color-AzulFuerte>h3, .asociados-cuadro-color-AzulCielo>h3, .asociados-cuadro-color-AzulMedio>h3{
 	color: white;
 }
 
+.asociados-cuadro-blanco .boton-amarillo,.asociados-cuadro-color-Verde .boton-amarillo, .asociados-cuadro-color-Rojo .boton-amarillo, .asociados-cuadro-color-AzulFuerte .boton-amarillo, .asociados-cuadro-color-AzulCielo .boton-amarillo, .asociados-cuadro-color-AzulMedio .boton-amarillo{
+	margin: .5em 0 .5em 0;
+}
 .aa:before {
 	content: "A.A. ";
 }
 
 .aa {
-	font-size: 1em;
-}
-.asociados-cuadro-blanco>h3, .asociados-cuadro-blanco>.aa {
-	color:black;
+	font-size: .8em;
 }
 
-/* Clases de foundation */
+.asociados-cuadro-blanco>h3, .asociados-cuadro-blanco>.aa {
+	color:black;
+	width: 80%;
+	margin: auto;
+	padding: .2em .2em;
+}
+
+.logo{
+	width: 100px;
+	padding: .5em 0;
+}
+
+/* Seccion de enlaces y requisitos */
+
+#enlaces_requisitos{
+	background-image: url(../img/Home_Requisitos.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+    background-origin: content-box;
+	height: 450px;
+}
+
+.enlaces-caja{
+	width: 50%;
+	height: 40%;
+	background-color: #1B2C4D;
+}
+
+.enlaces-caja>a{
+	display: block;
+}
+
+.enlaces-caja>a>p{
+	display: inline-block;
+}
+
+.enlaces-iconosb{
+	width: 50px;
+}
+
+.requisitos-eslogan{
+	margin: 3em auto;
+}
+/* Clases diseño movil */
 
 @media only screen and (max-width: 500px){
 	.orbit{
