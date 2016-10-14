@@ -265,6 +265,9 @@ ul {
 }
 
 /* Seccion de noticias */
+#noticias{
+	padding-bottom: 3em;
+}
 
 .noticias-titulo{
 	font-size: 2em;
@@ -281,6 +284,65 @@ ul {
 .titulo-noticias{
 	margin-top: 2em;
 	padding: .5em 0;
+}
+
+/* Seccion de pie de pagina */
+
+.piepagina{
+	background-image: url(../img/Home_Mapa.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+    background-origin: content-box;
+	height: 550px;
+	position: relative;
+}
+
+.footer-icono-ubicacion{
+	width: 600px;
+	position: absolute;
+	left: 20%;
+	top:0;
+}
+
+.footer-piepagina{
+	background-color: #1B2C4D;
+	color: white;
+	font-size: .8em;
+	padding-top: .5em;
+}
+
+.footer-contacto{
+	color:black;
+	background-color: white;
+	position: absolute;
+	right: 10%;
+	top:-20%;
+}
+.footer-contacto>ul>a{
+	color:#25A7C5;
+}
+
+.footer-redes_sociales,.fi-mail{
+	display: inline-block;
+}
+
+.footer-contacto>ul>li{
+	margin-top: .5em;
+}
+.footer-redes_sociales-elemnto>a>i{
+	font-size: 3em;
+	color:#25A7C5;
+}
+
+.fi-marker:before,.fi-telephone:before,.fi-mail:before{
+	color:#25A7C5;
+	font-size: 1.5em;
+	margin-right: .5em;
+}
+
+.formulario>.boton-amarillo{
+	margin-bottom: 1em;
+	margin-left: 80%;
 }
 
 /* Clases diseño movil */
