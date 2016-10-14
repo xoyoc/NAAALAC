@@ -120,6 +120,11 @@ ul {
 }
 
 /*seccion de asociados*/
+
+#asociados{
+	margin: 2em 0;
+}
+
 .orbit, .orbit-slide{
 	width: 100%;
 }
