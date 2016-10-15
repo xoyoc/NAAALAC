@@ -306,7 +306,8 @@ ul {
 	width: 600px;
 	position: absolute;
 	left: 20%;
-	top:0;
+	top:-10%;
+	fill: white;
 }
 
 .footer-piepagina{
@@ -437,8 +438,11 @@ ul {
 		top: 20%;
 	}
 	.footer-icono-ubicacion{
-		left: 0;
-		top:-30%;
+		left: 150px;
+		top:-5px;
+		fill: #1C2A4E;
+		z-index: 1;
+		width: 190px;
 	}
 	/*  } RWD seccion de contacto*/
 }
