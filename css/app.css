@@ -354,8 +354,8 @@ ul {
 
 @media only screen and (max-width: 500px){
 	.row .row{
-		margin-right: .2em;
-		margin-left: .2em;
+		margin-right: .6em;
+		margin-left: .6em;
 	}
 	/* { RWD Seccion de encabezado */
 	.orbit{
