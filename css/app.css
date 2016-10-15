@@ -431,7 +431,7 @@ ul {
 	/*  } RWD seccion de noticias*/
 
 	/* {  RWD seccion de contacto*/
-	.piepagina_contacto{
+	#piepagina_contacto{
 		margin-bottom: 30em;
 	}
 	.piepagina{
