@@ -353,8 +353,11 @@ ul {
 /* Clases diseño movil */
 
 @media only screen and (max-width: 500px){
-	
-	/* RWD Seccion de encabezado */
+	.row .row{
+		margin-right: .2em;
+		margin-left: .2em;
+	}
+	/* { RWD Seccion de encabezado */
 	.orbit{
 		height: 100vh;
 	}
@@ -373,9 +376,9 @@ ul {
 	.boton-menu{
 		color:white;
 	}
-	/* / RWD Seccion de encabezado */
+	/* } RWD Seccion de encabezado */
 	
-	/* RWD seccion de acerca y servicios */
+	/* { RWD seccion de acerca y servicios */
 	.acerca-icono {
 		width: 50%;
 	}
@@ -387,7 +390,15 @@ ul {
 		right: initial;
 		top: initial;
 	}
-	/*  RWD seccion de acerca y servicios */
+	/* } RWD seccion de acerca y servicios */
+
+	/* { RWD seccion de acerca y servicios */
+	.enlaces-contenedor,.filas-requisitos{
+		padding: 0;
+	}
+	.filas-requisitos{
+		margin-bottom: 0;
+	}
 	.requisitos-eslogan,.requisitos-caja>div:nth-last-of-type(2),.filas-requisitos>div:last-child{
 		display: none;
 	}
@@ -396,4 +407,27 @@ ul {
 		display: block;
 		width: 100%;
 	}
+	.requisitos-items{
+		margin-left: 0;
+		width: 35%;
+	}
+	.requisitos-items>p{
+		font-size: .8em;
+	}
+	/* } RWD seccion de acerca y servicios */
+	.noticias-imagenes{
+		margin:0;
+		display: block;
+		width: 100%;
+	}
+	.titulo-noticias{
+		margin-top: 0;
+		padding: 0;
+		text-align: center;
+	}
+	/* {   RWD seccion de noticias*/
+
+	
+
+	/*  } RWD seccion de noticias*/
 }
