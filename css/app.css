@@ -415,6 +415,8 @@ ul {
 		font-size: .8em;
 	}
 	/* } RWD seccion de acerca y servicios */
+	
+	/* {   RWD seccion de noticias*/	
 	.noticias-imagenes{
 		margin:0;
 		display: block;
@@ -425,9 +427,18 @@ ul {
 		padding: 0;
 		text-align: center;
 	}
-	/* {   RWD seccion de noticias*/
-
-	
-
 	/*  } RWD seccion de noticias*/
+
+	/* {  RWD seccion de contacto*/
+	.piepagina{
+		height: 300px;	
+	}
+	.footer-contacto{
+		top: 20%;
+	}
+	.footer-icono-ubicacion{
+		left: 0;
+		top:-30%;
+	}
+	/*  } RWD seccion de contacto*/
 }
