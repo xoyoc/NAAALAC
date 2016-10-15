@@ -431,6 +431,9 @@ ul {
 	/*  } RWD seccion de noticias*/
 
 	/* {  RWD seccion de contacto*/
+	.piepagina_contacto{
+		margin-bottom: 30em;
+	}
 	.piepagina{
 		height: 300px;	
 	}
@@ -443,6 +446,9 @@ ul {
 		fill: #1C2A4E;
 		z-index: 1;
 		width: 190px;
+	}
+	.formulario>.boton-amarillo{
+	margin-left: 65%;
 	}
 	/*  } RWD seccion de contacto*/
 }
