@@ -75,6 +75,9 @@ ul {
 }
 
 /*seccion de acerca y servicios*/
+#acerca_servicios{
+	position: relative;
+}
 
 .acerca{
 	text-align: center;
@@ -99,7 +102,7 @@ ul {
 	margin: 0 0 1em 0;
 	position: absolute;
 	right: 0;
-	top:530px;
+	top:-10%;
 }
 
 .servicios-titulo{
@@ -298,7 +301,7 @@ ul {
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
     background-origin: content-box;
-	height: 550px;
+	height: 600px;
 	position: relative;
 }
 
@@ -322,7 +325,7 @@ ul {
 	background-color: white;
 	position: absolute;
 	right: 10%;
-	top:-20%;
+	top:-10%;
 }
 .footer-contacto>ul>a{
 	color:#25A7C5;
