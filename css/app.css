@@ -42,6 +42,15 @@ ul {
 	list-style: none;
 }
 
+input[type=text], textarea{
+	border-color: #25A7C5; 
+}
+
+/* Encabezado */
+.orbit-previous,.orbit-next{
+	font-size: 2em;
+}
+
 .encabezado-logotipo {
 	position: absolute;
 	z-index: 1;
@@ -52,7 +61,7 @@ ul {
 
 .encabezado-redes_sociales, .encabezado-contenedorm {
 	position: absolute;
-	right: 0;
+	right: 5%;
 	z-index: 1;
 	background-color: #25A7C5;
 }
@@ -63,10 +72,10 @@ ul {
 
 .boton-menu {
 	position: absolute;
-	top: 40px;
-	right: 10px;
+	top: 70px;
+	right: 70px;
 	z-index: 1;
-	font-size: 2em;
+	font-size: 3em;
 	color: #25A7C5;
 }
 
@@ -102,7 +111,8 @@ ul {
 	margin: 0 0 1em 0;
 	position: absolute;
 	right: 0;
-	top:-10%;
+	top:-20%;
+	padding-bottom: 3em;
 }
 
 .servicios-titulo{
@@ -118,8 +128,8 @@ ul {
 }
 
 .menu>li>a {
-	font-size: .7em;
-	padding: .5em;
+	font-size: 1em;
+	padding: .2em;
 }
 
 /*seccion de asociados*/
@@ -354,7 +364,9 @@ ul {
 	margin-left: 80%;
 }
 
-/* Clases diseño movil */
+
+
+/*  RWD  Clases diseño movil */
 
 @media only screen and (max-width: 500px){
 	.row .row{
