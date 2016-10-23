@@ -47,6 +47,7 @@ input[type=text], textarea{
 }
 
 /* Encabezado */
+
 .orbit-previous,.orbit-next{
 	font-size: 2em;
 }
@@ -391,6 +392,8 @@ input[type=text], textarea{
 	}
 	.boton-menu{
 		color:white;
+		top: 50px;
+		right: 30px;
 	}
 	/* } RWD Seccion de encabezado */
 	
