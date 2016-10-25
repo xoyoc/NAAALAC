@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en" dir="ltr">
+<html class="no-js" lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -29,7 +29,11 @@
 
     <!-- Seccion de encabezado -->
     <div class="expanded row" id="encabezadoP">
-      <a class="boton-menu" href="#"><i class="fi-list"></i></a>        
+      <div class="off-canvas-wrap" data-offcanvas>
+        <div class="inner-wrap">
+          <a class="boton-menu right-off-canvas-toggle" href="#"><i class="fi-list"></i></a>        
+        </div>
+      </div>
       <header class="encabezado">
       
       <!--  Logotipo de AAALAC -->
@@ -40,29 +44,31 @@
       <nav class="small-6 medium-3 columns encabezado-redes_sociales">
         <ul class="menu">
           <li class="encabezado-redes_sociales-elemnto">
-            <a href="#"><i class="fi-social-facebook"></i></a>
+            <a href="https://www.facebook.com/aaalac/"><i class="fi-social-facebook"></i></a>
           </li>
           <li class="encabezado-redes_sociales-elemnto">
-            <a href="#"><i class="fi-social-twitter"></i></a>
+            <a href="https://twitter.com/AAALAC51"><i class="fi-social-twitter"></i></a>
           </li>
           <li class="encabezado-redes_sociales-elemnto">
-            <a href="#"><i class="fi-social-google-plus"></i></a>
+            <a href="https://plus.google.com/113078265389844237684"><i class="fi-social-google-plus"></i></a>
           </li>
         </ul>
       </nav>
-      <div class="encabezado-contenedorm">
-        <nav class="encabezado-contenedorm-menu">
-          <ul class="">
-            <a href="#"><li class="encabezado-menu-elemnto">Inicio</li></a>
-            <a href="#"><li class="encabezado-menu-elemnto">Acerca de nosotros</li></a>
-            <a href="#"><li class="encabezado-menu-elemnto">Servicios</li></a>
-            <a href="#"><li class="encabezado-menu-elemnto">Agencias Asociadas</li></a>
-            <a href="#"><li class="encabezado-menu-elemnto">Requisitos</li></a>
-            <a href="#"><li class="encabezado-menu-elemnto">Enlaces</li></a>
-            <a href="#"><li class="encabezado-menu-elemnto">Noticias</li></a>
-            <a href="#"><li class="encabezado-menu-elemnto">Contacto</li></a>
-          </ul>
-        </nav>
+      <div id="menu_opciones">
+        <div class="encabezado-contenedorm">
+          <nav class="encabezado-contenedorm-menu" data-magellan>
+            <ul class="">
+              <a href="#"><li class="encabezado-menu-elemnto">Inicio</li></a>
+              <a href="#acerca_servicios"><li class="encabezado-menu-elemnto">Acerca de nosotros</li></a>
+              <a href="#acerca_servicios"><li class="encabezado-menu-elemnto">Servicios</li></a>
+              <a href="#asociados"><li class="encabezado-menu-elemnto">Agencias Asociadas</li></a>
+              <a href="#enlaces_requisitos"><li class="encabezado-menu-elemnto">Requisitos</li></a>
+              <a href="#enlaces_requisitos"><li class="encabezado-menu-elemnto">Enlaces</li></a>
+              <a href="#noticias"><li class="encabezado-menu-elemnto">Noticias</li></a>
+              <a href="#piepagina_contacto"><li class="encabezado-menu-elemnto">Contacto</li></a>
+            </ul>
+          </nav>
+        </div>
       </div>
       <!-- / Seccion de menus -->
 
@@ -92,12 +98,36 @@
     <!-- / Seccion de encabezado -->
 
     <!-- Seccion de Acerca de nosotros y el partado de servicios -->
-    <div class="expanded row" id="acerca_servicios">
+    <div class="expanded row" id="acerca_servicios" data-magellan-target="acerca_servicios">
       <section class="columns small-12 medium-6 acerca">
         <img class="acerca-icono" src="img/Icono.svg" alt="IsoTipo de AAALAC">
         <h2 class="acerca-titulo">Acerca de nosotros</h2>
         <p>Somos una empresa de consultoría de apoyo y servicios; encargada de representar a sus asociados, sin fines de lucro, antes las autoridades que intervienen en el despacho aduanero.</p>
-        <button class="boton-amarillo">más sobre AAALAC</button>        
+        <a data-open="ventanaacerca"><button class="boton-amarillo">más sobre AAALAC</button></a>
+
+        <!-- Seccion de Ventana emergente de acerca de nosotros -->
+        <div class="reveal text-center" id="ventanaacerca" data-reveal>
+          <img class="acerca-icono" src="img/Icono.svg" alt="IsoTipo de AAALAC">
+          <h2 class="acerca-titulo">Acerca de nosotros</h2>
+          <p>La asociación de Agentes Aduanales de Lázaro Cárdenas es un grupo de agencias aduanales que tiene en común el desarrollo y crecimiento del puerto de Lázaro Cárdenas para crear una red que ofrece el mejor servicio y calidad.</p>
+          <div class="row align-spaced">
+            <div class="small-3">
+              <h6 class="text-left">Visíon:</h6>
+              <p class="text-justify">Ser la mejor Asociación a nivel nacional que represente al Agente Aduanal ante los diferentes actores de la cadena logística para gestionar y agilizar los procesos de importación y exportación.</p>
+            </div>
+            <div class="small-3">
+              <h6 class="text-left">Misión:</h6>
+              <p class="text-justify">Proporcionar la información confiable y oportuna que se gestione con las diversas autoridades y organismos particulares, para que con ello nuestros Asociados logren optimizar sus tiempos y costos de acuerdos a las necesidades y procesos de su despacho aduanal.</p>
+            </div>
+            <div class="small-3">
+              <h6 class="text-left">Política:</h6>
+              <p class="text-justify">La Asociación de Agentes Aduanales de Lázaro Cárdenas, trabaja en ofrecer servicios que generan valor para los agentes aduanales asociados, dentro de la caneda logística de la importación y exportación, utilizando la tecnología necesaria, además de estar comprometidos con la mejora continua.</p>
+            </div>
+          </div>
+          <button class="boton-amarillo" data-close aria-label="Close reveal" type="button">Cerrar</button>
+        </div>  
+        <!-- / Seccion de Ventana emergente de acerca de nosotros -->
+      
       </section>
       <section class="columns small-12 medium-6 servicios">
         <h2 class="servicios-titulo">Servicios</h2>
@@ -135,7 +165,7 @@
     <!-- / Seccion de Acerca de nosotros y el partado de servicios -->
 
     <!-- Seccion de Asociados con carusel -->
-    <div class="expanded row asociados" id="asociados">
+    <div class="expanded row asociados" id="asociados" data-magellan-target="asociados">
       <div class="small-12 columns text-center">
         <h2 class="asociados-titulo">Agencias asociadas</h2>
       </div>
@@ -1558,21 +1588,21 @@
     <!--  / Seccion de Asociados con carusel -->
     
     <!-- Seccion de visitas y requisitos -->
-    <div class="expanded row" id="enlaces_requisitos">
+    <div class="expanded row" id="enlaces_requisitos" data-magellan-target="enlaces_requisitos">
       
       <div class="enlaces-contenedor small-12 medium-6 columns">
         <div class="enlaces-caja text-center">
           <h4 class="enlaces-titulo">Visita estos enlaces</h4>
           <div class="align-spaced">
-            <a href="#">
+            <a href="http://www.sat.gob.mx/Paginas/Inicio.aspx">
               <img src="img/icono/Barco-Servicios.svg" alt="Barco enlaces" class="enlaces-iconosb">
               <p>Aduana Central</p>
             </a>
-            <a href="#">
+            <a href="http://www.aduanalzc.gob.mx/">
               <img src="img/icono/Barco-Servicios.svg" alt="Barco enlaces" class="enlaces-iconosb">
               <p>Aduana Lázaro Cárdenas</p>
             </a>
-            <a href="#">
+            <a href="https://ects.lctpc.com.mx:7002/">
               <img src="img/icono/Barco-Servicios.svg" alt="Barco enlaces" class="enlaces-iconosb">
               <p>TPCLC</p>
             </a>
@@ -1622,7 +1652,7 @@
     <!-- / Seccion de visitas y requisitos -->
 
     <!-- Seccion de Noticias -->
-    <div class="expanded row" id="noticias">
+    <div class="expanded row" id="noticias" data-magellan-target="noticias">
       <div class="expanded row">
         <h4 class="noticias-titulo">Noticias</h4>
       </div>     
@@ -1640,7 +1670,7 @@
     <!-- / Seccion de Noticias -->
     
     <!-- Seccion de Pie de pagina -->
-    <div id="piepagina_contacto">
+    <div id="piepagina_contacto" data-magellan-target="piepagina_contacto">
       <footer class="expanded row piepagina">
         <svg class="footer-icono-ubicacion" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 792 612" enable-background="new 0 0 792 612" xml:space="preserve">
           <path d="M395.5,126.9c-65.4,0-118.5,53.2-118.5,118.5c0,26.3,16.8,69.2,51.4,131.2c24.5,43.8,48.5,80.4,49.5,81.9
@@ -1653,19 +1683,25 @@
             <li class="fi-marker"> Río Balsas # 7-B 
             Col. Primer Sector de FIDELAC
             CP. 60950 Lázaro Cárdenas, Mich.</li>
-            <a href="">ver ubucación</a>
+            <a data-open="ventanaubica">ver ubucación</a>
+            <div class="reveal" id="ventanaubica" data-reveal>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15181.19564801629!2d-102.197244!3d17.964825!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x467f535c1cc75a9a!2sAsociaci%C3%B3n+de+Agentes+Aduanales+de+L%C3%A1zaro+C%C3%A1rdenas!5e0!3m2!1ses!2smx!4v1477351032412" width="800" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>
+              <button class="close-button" data-close aria-label="Close reveal" type="button">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
             <li class="fi-telephone">01 (753) 537 2001</li>
             <li class="fi-mail">info@aaalac.mx</li>
             <nav class="footer-redes_sociales">
               <ul class="menu">
                 <li class="footer-redes_sociales-elemnto">
-                  <a href="#"><i class="fi-social-facebook"></i></a>
+                  <a href="https://www.facebook.com/aaalac/"><i class="fi-social-facebook"></i></a>
                 </li>
                 <li class="footer-redes_sociales-elemnto">
-                  <a href="#"><i class="fi-social-twitter"></i></a>
+                  <a href="https://twitter.com/AAALAC51"><i class="fi-social-twitter"></i></a>
                 </li>
                 <li class="footer-redes_sociales-elemnto">
-                  <a href="#"><i class="fi-social-google-plus"></i></a>
+                  <a href="https://plus.google.com/113078265389844237684"><i class="fi-social-google-plus"></i></a>
                 </li>
               </ul>
             </nav>

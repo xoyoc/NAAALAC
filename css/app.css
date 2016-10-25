@@ -48,6 +48,12 @@ input[type=text], textarea{
 
 /* Encabezado */
 
+#menu_opciones{
+	position: relative;
+	left: -100%;
+	top:15%;
+}
+
 .orbit-previous,.orbit-next{
 	font-size: 2em;
 }
@@ -81,7 +87,21 @@ input[type=text], textarea{
 }
 
 .encabezado-contenedorm-menu{
-	display: none;
+	left: -50%;
+}
+
+#ventanaacerca{
+	width: 800px;
+}
+
+.reveal p{
+	font-size: .8em;
+}
+
+.reveal h6{
+	font-size: 1em;
+	text-transform: uppercase;
+	color:#2581DB;
 }
 
 /*seccion de acerca y servicios*/
@@ -139,7 +159,7 @@ input[type=text], textarea{
 	margin: 0;
 }
 
-.orbit, .orbit-slide{
+.orbit {
 	width: 100%;
 }
 
