@@ -47,6 +47,9 @@ input[type=text], textarea{
 }
 
 /* Encabezado */
+.orbit-container{
+	height: 550px !important;
+}
 
 #menu_opciones{
 	position: relative;
@@ -398,14 +401,14 @@ input[type=text], textarea{
 	.orbit{
 		height: 100vh;
 	}
-	.orbit-slide {
-		width: 225vh;
+	.orbit-container{
+		height: 100vh !important;
 	}
 	.orbit-previous,.orbit-next{
 		display: none;
 	}
 	.encabezado-redes_sociales{
-		bottom: 0;
+		bottom: 80px;
 	}
 	.encabezado-logotipo{
 		width: 70%;
