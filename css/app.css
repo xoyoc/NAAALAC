@@ -398,7 +398,11 @@ input[type=text], textarea{
 		margin-left: .6em;
 	}
 	/* { RWD Seccion de encabezado */
-	.orbit{
+	.boton-menu {
+		top: 40px;
+		right: 50px;
+	}
+	.orbit,.orbit-image{
 		height: 100vh;
 	}
 	.orbit-container{
@@ -408,7 +412,7 @@ input[type=text], textarea{
 		display: none;
 	}
 	.encabezado-redes_sociales{
-		bottom: 80px;
+		bottom: 30px;
 	}
 	.encabezado-logotipo{
 		width: 70%;
