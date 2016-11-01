@@ -399,7 +399,7 @@ input[type=text], textarea{
 	}
 	/* { RWD Seccion de encabezado */
 	.boton-menu {
-		top: 40px;
+		top: 0px;
 		right: 50px;
 	}
 	.orbit,.orbit-image{
