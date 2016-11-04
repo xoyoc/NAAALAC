@@ -47,8 +47,12 @@ input[type=text], textarea{
 }
 
 /* Encabezado */
-.orbit-container{
+div[aria-label=AAALAC] .orbit-container{
 	height: 550px !important;
+}
+
+div[aria-label=Asociados] .orbit-container{
+	height: 272px !important;
 }
 
 #menu_opciones{
@@ -93,7 +97,7 @@ input[type=text], textarea{
 	left: -50%;
 }
 
-#ventanaacerca{
+#ventanaacerca,#ventanarequi{
 	width: 800px;
 }
 
@@ -232,6 +236,20 @@ input[type=text], textarea{
 }
 
 /* Seccion de enlaces y requisitos */
+#ventanarequi{
+	color:white;
+	background-color: #25A7C5;
+}
+
+div[aria-label=Requisitos] .orbit-container{
+	height: 350px !important;
+}
+
+.requisitos-titulo{
+	color:white;
+	font-size: 1.2em;
+	margin-top: 2em;
+}
 
 #enlaces_requisitos{
 	background-image: url(../img/Home_Requisitos.png);
