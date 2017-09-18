@@ -1,10 +1,12 @@
 <!doctype html>
 <html class="no-js" lang="es" dir="ltr">
   <head>
+    
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AAALAC</title>
+    
     <!-- Seccion del Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
@@ -24,6 +26,7 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <!-- / Seccion del Favicon -->
+
   </head>
   <body>
 
@@ -72,14 +75,14 @@
       </div>
       <!-- / Seccion de menus -->
 
-      <!-- Seccion de Carusel -->
+      <!-- Seccion de Laminas de Inicio -->
       <div class="orbit" aria-label="AAALAC" data-orbit>
         <ul class="orbit-container">
           <button class="orbit-previous"><span class="show-for-sr">Anterio Lamina</span>&#10216;&#xFE0E;</button>
           <button class="orbit-next"><span class="show-for-sr">Siguiente Lamina</span>&#10217;&#xFE0E;</button>
           
           <li class="is-active orbit-slide">
-            <img data-interchange="[img/Home_Slider1_Movil.png, small], [img/Home_Slider1.png, medium]" class="orbit-image">
+            <img class="orbit-image" data-interchange="[img/Home_Slider1_Movil.png, small], [img/Home_Slider1.png, medium]" alt="Laminas de Inicio">
           </li>
           <li class="orbit-slide">
             <img class="orbit-image" data-interchange="[img/Home_Slider2_Movil.png, small], [img/Home_Slider2.png, medium]" alt="Laminas de Inicio">
@@ -92,7 +95,7 @@
           </li>
         </ul>
       </div>
-      <!-- / Seccion de Carusel -->
+      <!-- / Seccion de Laminas de Inicio -->
       </header>
     </div>
     <!-- / Seccion de encabezado -->
@@ -166,7 +169,7 @@
 
     <!-- Seccion de Asociados con carusel -->
       
-      <!-- RWD Carrusel para Desktop -->
+      <!-- RWD Carrusel de los asociados -->
       <div class="expanded row">
         <div class="colmuns small-12">
           <div class="owl-carousel owl-theme">
@@ -438,7 +441,7 @@
               <a href="http://www.grupogea.mx"><button class="boton-amarillo">ir a website</button></a>
             </div>
             <div class="asociados-cuadro-color-AzulFuerte item">
-              <img src="img/logoAg/" alt="logo" class="logo">
+              <img src="img/Icono.svg" alt="logo" class="logo">
               <h3>Agencia Aduanal Intertraffic S.C.</h3>
               <h4 class="aa">Mario Herebe Venegas Cubero</h4>
               <a href="http://www.intertraffic.com.mx"><button class="boton-amarillo">ir a website</button></a>
@@ -450,7 +453,7 @@
               <a href="http://www.servi-port.com.mx"><button class="boton-amarillo">ir a website</button></a>
             </div>
             <div class="asociados-cuadro-color-AzulCielo item">
-              <img src="img/logoAg/" alt="logo" class="logo">
+              <img src="img/Icono.svg" alt="logo" class="logo">
               <h3>Alianza Estratégica Portuaria S.A. De C.V.</h3>
               <h4 class="aa">Arturo Eleazar Villaseñor S.</h4>
               <h4 class="aa">José Pedro Aguillón Padilla</h4>
@@ -476,13 +479,13 @@
               <a href="http://www.cargoquin.com"><button class="boton-amarillo">ir a website</button></a>
             </div>            
             <div class="asociados-cuadro-color-Verde item">
-              <img src="" alt="logo" class="logo">
+              <img src="img/Icono.svg" alt="logo" class="logo">
               <h3>Opa Logistics S.A. De C.V.</h3>
               <h4 class="aa">Óscar Mercado Ocampo Morales</h4>
               <a href=""><button class="boton-amarillo">ir a website</button></a>
             </div>
             <div class="asociados-cuadro-blanco item">
-              <img src="" alt="logo" class="logo">
+              <img src="img/Icono.svg" alt="logo" class="logo">
               <h3>Agencia Chavez Rojas S.C.</h3>
               <h4 class="aa">José Luis Chavez Rojas</h4>
               <a href="http://www.redina.com.mx"><button class="boton-amarillo">ir a website</button></a>
@@ -523,13 +526,12 @@
           </div>
         </div>
       </div>
-      <!-- / RWD Carrusel para Desktop -->
+      <!-- / RWD Carrusel de los asociados -->
 
     <!--  / Seccion de Asociados con carusel -->
     
     <!-- Seccion de visitas y requisitos -->
     <div class="expanded row" id="enlaces_requisitos" data-magellan-target="enlaces_requisitos">
-      
       <div class="enlaces-contenedor small-12 medium-6 columns">
         <div class="enlaces-caja text-center">
           <h4 class="enlaces-titulo">Visita estos enlaces</h4>
@@ -542,7 +544,7 @@
               <img src="img/icono/Barco-Servicios.svg" alt="Barco enlaces" class="enlaces-iconosb">
               <p>Aduana Lázaro Cárdenas</p>
             </a>
-            <a href="https://ects.lctpc.com.mx:7002/">
+            <a href="https://ects.lctpc.com.mx:7004/">
               <img src="img/icono/Barco-Servicios.svg" alt="Barco enlaces" class="enlaces-iconosb">
               <p>TPCLC</p>
             </a>
@@ -794,8 +796,6 @@
           owl.owlCarousel({
               loop:true,
               margin:10,
-              autoplay:true,
-              autoplayTimeout: 1000,
               responsiveClass:true,
               responsive:{
                   0:{
@@ -805,7 +805,9 @@
                       items:4
                   },
                   1000:{
-                      items:6
+                      items:6,
+                      autoplay:true,
+                      autoplayTimeout: 1000
                   }
               }
           })
