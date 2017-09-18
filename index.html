@@ -789,28 +789,31 @@
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.min.js"></script>
     <script src="js/vendor/owl.carousel.js"></script>
+    <script src="js/vendor/owl.autoplay.js"></script>
     <script src="js/app.js"></script>
     <script>
       $(document).ready(function(){
-          var owl = $('.owl-carousel');
-          owl.owlCarousel({
-              loop:true,
-              margin:10,
-              responsiveClass:true,
-              responsive:{
-                  0:{
-                      items:2
-                  },
-                  600:{
-                      items:4
-                  },
-                  1000:{
-                      items:6,
-                      autoplay:true,
-                      autoplayTimeout: 1000
-                  }
-              }
-          })
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:2,
+                    nav:true
+                },
+                600:{
+                    items:4,
+                    nav:false
+                },
+                1000:{
+                    items:6,
+                    autoplay: true,
+                    autoplayTimeout:1000,
+                    nav:true
+                }
+            }
+        })
         });
     </script>
     <!-- / Seccion de archivos JavaScript -->
